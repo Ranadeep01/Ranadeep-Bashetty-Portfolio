@@ -99,16 +99,29 @@ export default {
 				'slide-up': {
 					'0%': { transform: 'translateY(20px)', opacity: '0' },
 					'100%': { transform: 'translateY(0)', opacity: '1' }
+				},
+				'pulse': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
-				'slide-up': 'slide-up 0.5s ease-out'
+				'slide-up': 'slide-up 0.5s ease-out',
+				'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
+				poppins: ['Poppins', 'sans-serif'],
+			},
+			boxShadow: {
+				'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.06)',
+				'card': '0 7px 14px 0 rgba(0, 0, 0, 0.07), 0 3px 6px 0 rgba(0, 0, 0, 0.03)',
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			}
 		}
 	},
