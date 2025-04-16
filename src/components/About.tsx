@@ -2,7 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Code, Database, Layout, Server, 
-  Tool, CheckCircle, GitBranch, Terminal
+  Wrench, CheckCircle, GitBranch, Terminal
 } from 'lucide-react';
 
 const About = () => {
@@ -24,7 +24,7 @@ const About = () => {
     },
     {
       category: "Tools",
-      icon: <Tool className="h-6 w-6 text-portfolio-purple" />,
+      icon: <Wrench className="h-6 w-6 text-portfolio-purple" />,
       items: ["Git", "GitHub", "POSTMAN", "VS Code", "Eclipse"]
     },
     {
